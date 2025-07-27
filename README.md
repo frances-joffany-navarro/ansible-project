@@ -7,4 +7,4 @@ These are the playbook compilation
 
 ### Credit
 Credit
-[https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html](Is it better to disassociate first the EIP or reassociate?)
+(https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)[Is it better to disassociate first the EIP or reassociate?]
