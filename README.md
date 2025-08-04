@@ -11,6 +11,7 @@ These are the playbook compilation
 - [Getting started with Ansible 02 - SSH Overview & Setup](https://www.youtube.com/watch?v=-Q4T9wLsvOQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=2)
 - [Getting started with Ansible 03 - Setting up the Git Repository](https://youtu.be/FFaMqxpphjo?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 - [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
+- [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
