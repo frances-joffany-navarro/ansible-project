@@ -10,7 +10,7 @@ These are the playbook compilation
 - [Getting started with Ansible 01 - Introduction - Learn Linux TV](https://www.youtube.com/watch?v=3RiVKs8GHYQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 - [Getting started with Ansible 02 - SSH Overview & Setup](https://www.youtube.com/watch?v=-Q4T9wLsvOQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=2)
   - Notes
-      - OpenSSH is required: in workstation, where you install Ansible, install openSSH-client. In servers, install openssh-server
+      - OpenSSH is **required**: in workstation, where you install Ansible, install openSSH-client. In servers, install openssh-server
       - Create SSH key pair indicating the type and some description `ssh-keygen -t ed25519 -C "description here"`
       - Copy the SSH public key to a server`ssh-copy-id -i ~/.ssh/ed25519.pub username@ipAdress`
       - Create an alias called ssha by adding it inside .bashrc file `alias ssha=eval $(ssh-agent) && ssh-add` - this activates the ssh-agent and register the password one time. Type `ssha` to run the code and type `alias ssha` to show the code.
