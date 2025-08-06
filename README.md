@@ -12,11 +12,13 @@ These are the playbook compilation
   - Notes
       - OpenSSH is **required**: in workstation, where you install Ansible, install openSSH-client. In servers, install openssh-server
       - Create SSH key pair indicating the type and some description `ssh-keygen -t ed25519 -C "description here"`
-      - Copy the SSH public key to a server`ssh-copy-id -i ~/.ssh/ed25519.pub username@ipAdress`
-      - Create an alias called ssha by adding it inside .bashrc file `alias ssha=eval $(ssh-agent) && ssh-add` - this activates the ssh-agent and register the password one time. Type `ssha` to run the code and type `alias ssha` to show the code.
+      - Copy the SSH public key to a server `ssh-copy-id -i ~/.ssh/ed25519.pub username@ipAdress`
+      - Create an alias called ssha by adding it inside `.bashrc` file `alias ssha=eval $(ssh-agent) && ssh-add` - this activates the ssh-agent and register the password one time. Type `ssha` to run the code and type `alias ssha` to show the code.
   - Problems
+      - [Ubuntu terminal will not launch](https://askubuntu.com/a/1470425/2314689)
       - [username is not in the sudoers file](https://stackoverflow.com/questions/47806576/username-is-not-in-the-sudoers-file-this-incident-will-be-reported)
 - [Getting started with Ansible 03 - Setting up the Git Repository](https://youtu.be/FFaMqxpphjo?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+  - Notes
 - [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
