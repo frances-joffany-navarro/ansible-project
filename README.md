@@ -19,6 +19,8 @@ These are the playbook compilation
       - [username is not in the sudoers file](https://stackoverflow.com/questions/47806576/username-is-not-in-the-sudoers-file-this-incident-will-be-reported)
 - [Getting started with Ansible 03 - Setting up the Git Repository](https://youtu.be/FFaMqxpphjo?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
   - Notes
+  - Issues
+      - [Enable shared clipboard between host and VM](https://medium.com/@undoworks4649/to-enable-copy-and-paste-as-well-as-folder-sharing-on-ubuntu-running-on-virtualbox-8a77cfb348f8)
 - [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
