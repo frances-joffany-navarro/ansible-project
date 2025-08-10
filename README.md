@@ -27,6 +27,11 @@ These are the playbook compilation
   - Issues
       - [Enable shared clipboard between host and VM](https://medium.com/@undoworks4649/to-enable-copy-and-paste-as-well-as-folder-sharing-on-ubuntu-running-on-virtualbox-8a77cfb348f8)
 - [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
+  - Notes
+    - run inventory with ssh key `ansible all --key-file ~/.ssh/ansible -i inventory -m ping`.
+    - use ansible.cfg file to put the default values like the path for the private key and the inventory name. Then run `ansible all -m ping`.
+    - List the hosts in inventory `ansible all --list-hosts`.
+    - Pull more info about the hosts `ansible all -m gather_facts` or to pull a single host `ansible all -m gather_facts --limit <ip address>`
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 ### Credit
