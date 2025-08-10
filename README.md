@@ -23,7 +23,7 @@ These are the playbook compilation
     - Create SSH key in github account: Settings > SSH and GPG keys > Add title and copy and paste the public SSH key from the workstation
     - Clone git repository `git clone ssh@github`
     - Configure name and email `git config --global user.name "name" && git config --global user.email "email@b.com"`
-    - 
+    - Pushing for the first time `git push origin main`
   - Issues
       - [Enable shared clipboard between host and VM](https://medium.com/@undoworks4649/to-enable-copy-and-paste-as-well-as-folder-sharing-on-ubuntu-running-on-virtualbox-8a77cfb348f8)
 - [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
