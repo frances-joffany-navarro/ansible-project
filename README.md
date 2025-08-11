@@ -31,7 +31,9 @@ These are the playbook compilation
     - run inventory with ssh key `ansible all --key-file ~/.ssh/ansible -i inventory -m ping`.
     - use ansible.cfg file to put the default values like the path for the private key and the inventory name. Then run `ansible all -m ping`.
     - List the hosts in inventory `ansible all --list-hosts`.
-    - Pull more info about the hosts `ansible all -m gather_facts` or to pull a single host `ansible all -m gather_facts --limit <ip address>`
+    - Pull more info about the hosts `ansible all -m gather_facts` or to pull a single host `ansible all -m gather_facts --limit <ip address>`.
+- [Getting started with Ansible 05 - Running elevated ad-hoc Commands](https://youtu.be/FPU9_KDTa8A)
+  - Notes
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 ### Credit
