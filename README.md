@@ -34,9 +34,9 @@ These are the playbook compilation
     - Pull more info about the hosts `ansible all -m gather_facts` or to pull a single host `ansible all -m gather_facts --limit <ip address>`.
 - [Getting started with Ansible 05 - Running elevated ad-hoc Commands](https://youtu.be/FPU9_KDTa8A)
   - Notes
-		- `ansible all -m apt -a update_cache=true --become --ask-become-pass` is the same as `sudo apt update`
-		- `ansible all -m apt -a name=vim --become --ask-become-pass` is the same as `sudo apt install vim`
-			- if there are multiple argument then add "" like "name=vim state=latest"
+	- `ansible all -m apt -a update_cache=true --become --ask-become-pass` is the same as `sudo apt update`
+	- `ansible all -m apt -a name=vim --become --ask-become-pass` is the same as `sudo apt install vim`
+		- if there are multiple argument then add "" like "name=vim state=latest"
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 ### Credit
