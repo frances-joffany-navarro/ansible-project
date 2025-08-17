@@ -9,35 +9,39 @@ These are the playbook compilation
 - [https://docs.ansible.com/ansible/latest/index.html](https://docs.ansible.com/ansible/latest/index.html)
 - [Getting started with Ansible 01 - Introduction - Learn Linux TV](https://www.youtube.com/watch?v=3RiVKs8GHYQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 - [Getting started with Ansible 02 - SSH Overview & Setup](https://www.youtube.com/watch?v=-Q4T9wLsvOQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=2)
-  - Notes
+  - **Notes**
       - OpenSSH is **required**: in workstation, where you install Ansible, install openSSH-client. In servers, install openssh-server
       - Create SSH key pair indicating the type and some description `ssh-keygen -t ed25519 -C "description here"`
       - Copy the SSH public key to a server `ssh-copy-id -i ~/.ssh/ed25519.pub username@ipAdress`
       - Create an alias called ssha by adding it inside `.bashrc` file `alias ssha=eval $(ssh-agent) && ssh-add` - this activates the ssh-agent and register the password one time. Type `ssha` to run the code and type `alias ssha` to show the code.
-  - Issues
+  - **Issues**
       - [Ubuntu terminal will not launch](https://askubuntu.com/a/1470425/2314689)
       - [username is not in the sudoers file](https://stackoverflow.com/questions/47806576/username-is-not-in-the-sudoers-file-this-incident-will-be-reported)
 - [Getting started with Ansible 03 - Setting up the Git Repository](https://youtu.be/FFaMqxpphjo?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
-  - Notes
+  - **Notes**
     - Update and install git `sudo apt update` `sudo apt install git` 
     - Create SSH key in github account: Settings > SSH and GPG keys > Add title and copy and paste the public SSH key from the workstation
     - Clone git repository `git clone ssh@github`
     - Configure name and email `git config --global user.name "name" && git config --global user.email "email@b.com"`
     - Pushing for the first time `git push origin main`
-  - Issues
+  - **Issues**
       - [Enable shared clipboard between host and VM](https://medium.com/@undoworks4649/to-enable-copy-and-paste-as-well-as-folder-sharing-on-ubuntu-running-on-virtualbox-8a77cfb348f8)
 - [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
-  - Notes
+  - **Notes**
     - run inventory with ssh key `ansible all --key-file ~/.ssh/ansible -i inventory -m ping`.
     - use ansible.cfg file to put the default values like the path for the private key and the inventory name. Then run `ansible all -m ping`.
     - List the hosts in inventory `ansible all --list-hosts`.
     - Pull more info about the hosts `ansible all -m gather_facts` or to pull a single host `ansible all -m gather_facts --limit <ip address>`.
 - [Getting started with Ansible 05 - Running elevated ad-hoc Commands](https://youtu.be/FPU9_KDTa8A)
-  - Notes
+  - **Notes**
 	- `ansible all -m apt -a update_cache=true --become --ask-become-pass` is the same as `sudo apt update`
 	- `ansible all -m apt -a name=vim --become --ask-become-pass` is the same as `sudo apt install vim`
 		- if there are multiple argument then add "" like "name=vim state=latest"
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+  - **Notes**
+    - created two playbook, which [install](install_apache.yml) and [uninstall](remove_apache.yml) apache package 
+    - to run playbook `ansible-playbook --ask-become-pass install_apache.yml`
+  
 - [Getting started with Ansible 07 - The 'when' Conditional](https://youtu.be/BF7vIk9no14?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 ### Credit
