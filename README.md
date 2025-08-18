@@ -43,6 +43,15 @@ These are the playbook compilation
     - to run playbook `ansible-playbook --ask-become-pass install_apache.yml`
   
 - [Getting started with Ansible 07 - The 'when' Conditional](https://youtu.be/BF7vIk9no14?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+  - **Notes**
+    -  In this tutorial, we take a look at differentiating our playbook based on the distribution of the target. That what we use the where condition
+    -  Some servers use other package distribution like Ubuntu uses apt package and CentOS use dnf
+    -  if you want to run some tasks in different distribution then `when: ansible_distribution in ["Ubuntu","Debian"]`
+    -  Get information to use as use cases for when statement `ansible all -m gather_facts --limit ip_address | grep a ansible_distribution` this line says that gather facts on the indicated ip address and search the ansible_distribution variable
+  - Issues
+    - for CentOS server you need to run the following command to allow communication and for the httpd to run smoothly. This command should be automated for CentOS server
+      - `sudo systemctl start httpd`
+      - `sudo firewall-cmd --add-port=80/tcp`  
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
