@@ -38,20 +38,34 @@ These are the playbook compilation
 	- `ansible all -m apt -a name=vim --become --ask-become-pass` is the same as `sudo apt install vim`
 		- if there are multiple argument then add "" like "name=vim state=latest"
 - [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
-  - **Notes**
+  - ** Notes **
     - created two playbook, which [install](install_apache.yml) and [uninstall](remove_apache.yml) apache package 
     - to run playbook `ansible-playbook --ask-become-pass install_apache.yml`
   
-- [Getting started with Ansible 07 - The 'when' Conditional](https://youtu.be/BF7vIk9no14?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
-  - **Notes**
-    -  In this tutorial, we take a look at differentiating our playbook based on the distribution of the target. That what we use the where condition
-    -  Some servers use other package distribution like Ubuntu uses apt package and CentOS use dnf
-    -  if you want to run some tasks in different distribution then `when: ansible_distribution in ["Ubuntu","Debian"]`
-    -  Get information to use as use cases for when statement `ansible all -m gather_facts --limit ip_address | grep a ansible_distribution` this line says that gather facts on the indicated ip address and search the ansible_distribution variable
-  - Issues
-    - for CentOS server you need to run the following command to allow communication and for the httpd to run smoothly. This command should be automated for CentOS server
+#### [Getting started with Ansible 07 - The 'when' Conditional](https://youtu.be/BF7vIk9no14?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) ####
+<p>
+In this tutorial, we take a look at differentiating our playbook based on the distribution of the target. That what we use the where condition 
+</p>
+  <details open>
+    <summary>Notes </summary>  
+    <ul>
+    Some servers use other package distribution like Ubuntu uses apt package and CentOS use dnf
+    if you want to run some tasks in different distribution then `when: ansible_distribution in ["Ubuntu","Debian"]`
+    <hr>
+    Get information to use as use cases for when statement <code>ansible all -m gather_facts --limit ip_address | grep a ansible_distribution</code> this line says that gather facts on the indicated ip address and search the ansible_distribution variable
+    </ul>
+  </details>
+  <details open>
+    <summary>Issues</summary>
+    for CentOS server you need to run the following command to allow communication and for the httpd to run smoothly. This command should be automated for CentOS server
       - `sudo systemctl start httpd`
-      - `sudo firewall-cmd --add-port=80/tcp`  
+      - `sudo firewall-cmd --add-port=80/tcp` 
+    <hr>
+  </details>
+
+- [Getting Started with Ansible 08 - Improving your Playbook](https://youtu.be/JJ-aoyydfVU?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) 
+  -  In video #8, we look into a few ways we can clean up and consolidate the playbook we've been working with so far. 
+  -  
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
