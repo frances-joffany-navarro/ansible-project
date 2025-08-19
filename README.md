@@ -63,9 +63,8 @@ In this tutorial, we take a look at differentiating our playbook based on the di
     <hr>
   </details>
 
-- [Getting Started with Ansible 08 - Improving your Playbook](https://youtu.be/JJ-aoyydfVU?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) 
-  -  In video #8, we look into a few ways we can clean up and consolidate the playbook we've been working with so far. 
-  -  
+#### [Getting Started with Ansible 08 - Improving your Playbook](https://youtu.be/JJ-aoyydfVU?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) 
+In video #8, we look into a few ways we can clean up and consolidate the playbook we've been working with so far. 
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
