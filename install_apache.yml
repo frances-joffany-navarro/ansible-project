@@ -3,20 +3,10 @@
   become: true
   tasks:
 
-  - name: install apache pnd php packages for Ubuntu
-    apt:
+  - name: install apache and php packages
+    package:
       name: 
-        - apache2
-        - libapache2-mod-php
+        - "{{apache_package}}"
+        - "{{php_package}}"
       state: latest
       update-cache: yes
-    when: ansible_distribution == "Ubuntu"
-
-  - name: install httpd and php packages for CentOS
-    dnf:
-      name: 
-        - httpd
-        - php
-      state: latest
-      update-cache: yes
-    when: ansible_distribution == "CentOS"
