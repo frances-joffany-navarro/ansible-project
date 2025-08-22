@@ -94,9 +94,8 @@ These are ansible playbook compilation
     
   
 #### [Getting started with Ansible 07 - The 'when' Conditional](https://youtu.be/BF7vIk9no14?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
-<p>
+
 In this tutorial, we take a look at differentiating our playbook based on the distribution of the target. That what we use the where condition 
-</p>
 
   <details>
   <summary>Notes </summary>  
@@ -112,13 +111,18 @@ In this tutorial, we take a look at differentiating our playbook based on the di
   <details>
     <summary>Issues</summary>
 
-  For CentOS server, you need to run the following command to allow communication and for the httpd to run smoothly. These command should be automated for CentOS server:  
+For CentOS server, you need to run the following command to allow communication and for the httpd to run smoothly. These command should be automated for CentOS server:  
   - `sudo systemctl start httpd`
   - `sudo firewall-cmd --add-port=80/tcp`
   </details>
 
 #### [Getting Started with Ansible 08 - Improving your Playbook](https://youtu.be/JJ-aoyydfVU?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) 
+
 In video #8, we look into a few ways we can clean up and consolidate the playbook we've been working with so far. 
+
+#### [Getting started with Ansible 09 - Targeting Specific Nodes](https://youtu.be/EraC1AuWEF8?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+
+In video #9, we split our inventory file into groups, and look at how to run tasks on nodes based on their group. 
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
