@@ -120,9 +120,32 @@ For CentOS server, you need to run the following command to allow communication 
 
 In video #8, we look into a few ways we can clean up and consolidate the playbook we've been working with so far. 
 
+  <details>
+    <summary>Notes</summary>
+  
+  To consolidate plays, you can install multiple packages and update packages.
+  
+  You can create/use variables and initialize it in inventory per ip
+  </details>
+
 #### [Getting started with Ansible 09 - Targeting Specific Nodes](https://youtu.be/EraC1AuWEF8?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 In video #9, we split our inventory file into groups, and look at how to run tasks on nodes based on their group. 
+
+  <details>
+
+  <summary>Notes</summary>
+    
+  We split our inventory file by group like webservers, fileserver and etc.
+  
+  ~~~
+  [webservers]
+  192.168.129.44
+  ~~~
+
+  Then indicate in plays which host you want to implement the plays with.
+
+  </details>  
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
