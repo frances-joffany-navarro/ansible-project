@@ -147,5 +147,16 @@ In video #9, we split our inventory file into groups, and look at how to run tas
 
   </details>  
 
+#### [Getting started with Ansible 10 - Tags](https://youtu.be/gH_A-0zYLyw?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+
+In video 10, we learn how to add tags to our plays that can make it easier to target specific things when we don't want to run the entire playbook each time.
+
+  <details>
+
+  <summary>Notes</summary>
+ 
+
+  </details> 
+
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
