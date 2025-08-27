@@ -11,6 +11,9 @@ These are ansible playbook compilation
 #### [Getting started with Ansible 01 - Introduction - Learn Linux TV](https://www.youtube.com/watch?v=3RiVKs8GHYQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
 #### [Getting started with Ansible 02 - SSH Overview & Setup](https://www.youtube.com/watch?v=-Q4T9wLsvOQ&list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70&index=2)
+  
+  In the second episode, we take a look at some foundational knowledge, specifically OpenSSH which is required for Ansible to work. 
+
   <details>
 
   <summary>Notes</summary>
@@ -33,6 +36,8 @@ These are ansible playbook compilation
       
 #### [Getting started with Ansible 03 - Setting up the Git Repository](https://youtu.be/FFaMqxpphjo?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
 
+In part 3, we take a look at another foundational concept - Git. Everyone who effectively implements automation uses Git, and in this video, we look into creating a repository and how to push changes. 
+  
   <details>
 
   <summary>Notes</summary>
@@ -58,6 +63,8 @@ These are ansible playbook compilation
 
 #### [Getting Started with Ansible 04 - Running ad-hoc Commands](https://youtu.be/4REljLsOnXk?si=VlK5jN1ROdlWZaPW)
 
+In the fourth episode, we install Ansible and use it to run some ad-hoc commands. 
+
   <details>
   <summary>Notes</summary>
   
@@ -72,6 +79,8 @@ These are ansible playbook compilation
   </details>
     
 #### [Getting started with Ansible 05 - Running elevated ad-hoc Commands](https://youtu.be/FPU9_KDTa8A)
+
+In the fifth video, we take a look at more ad-hoc commands - but this time, commands that perform changes. 
   
   <details>
   <summary>Notes</summary>
@@ -83,6 +92,8 @@ These are ansible playbook compilation
   </details>
 	
 #### [Getting started with Ansible 06 - Writing our first Playbook](https://youtu.be/VANub3AhZpI?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+
+In video #6, we get started on writing playbooks, which is how we'll use Ansible from here on out. 
   
   <details>
   <summary>Notes</summary>
@@ -154,9 +165,30 @@ In video 10, we learn how to add tags to our plays that can make it easier to ta
   <details>
 
   <summary>Notes</summary>
+
+  Add tags to your plays by adding `tags:` variable before the module.
+  
+  ```
+  tags: ubuntu,db,mariadb
+  apt:
+  ```
+
+  List the created tags in a playbook by typing `ansible-playbook --list-tags site.yml`
+
+  Run a certain tag by typing `ansible-playbook --tags ubuntu --ask-become-pass site.yml`
+  </details> 
+
+#### [Getting started with Ansible 11 - Managing Files](https://youtu.be/teEhLgHpGgo?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70)
+
+In video #11, we look at a few methods of copying files to target nodes.
+
+  <details>
+
+  <summary>Notes</summary>
  
 
   </details> 
+
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
