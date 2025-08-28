@@ -189,6 +189,17 @@ In video #11, we look at a few methods of copying files to target nodes.
 
   </details> 
 
+#### [Getting started with Ansible 12 - Managing Services](https://youtu.be/soeBHGAMkoQ?si=5ao8jDgzCEW4PhC6)
+
+In video 12, we learn how to manage systemd services that run in the background.
+
+  <details>
+
+  <summary>Notes</summary>
+ 
+
+  </details>
+
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
