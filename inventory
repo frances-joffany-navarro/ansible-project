@@ -1,6 +1,10 @@
 [web_servers]
 192.168.129.44
 
+[workstation]
+192.168.129.50
+
+
 
 # example for CENTOS server
 # 192.168.129.45 apache_package=httpd php_package=php
