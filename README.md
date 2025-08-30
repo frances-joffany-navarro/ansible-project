@@ -189,6 +189,13 @@ In video #11, we look at a few methods of copying files to target nodes.
 
   </details> 
 
+  <details>
+
+  <summary>Issues</summary>
+ Problem connecting to the hosts
+
+  </details> 
+
 #### [Getting started with Ansible 12 - Managing Services](https://youtu.be/soeBHGAMkoQ?si=5ao8jDgzCEW4PhC6)
 
 In video 12, we learn how to manage systemd services that run in the background.
