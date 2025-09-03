@@ -203,7 +203,7 @@ In video 12, we learn how to manage systemd services that run in the background.
   <details>
 
   <summary>Notes</summary>
- 
+ coming soon ...
 
   </details>
 
@@ -214,7 +214,7 @@ In video 12, we learn how to manage systemd services that run in the background.
   <details>
 
   <summary>Notes</summary>
- 
+ coming soon ...
 
   </details>
 
