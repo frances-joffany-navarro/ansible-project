@@ -1,4 +1,4 @@
-no# My Ansible Playbook
+ko no# My Ansible Playbook
 These are ansible playbook compilation
 
 - Print the instance information associated to an EIP
@@ -208,7 +208,17 @@ In video 12, we learn how to manage systemd services that run in the background.
   </details>
 
 
-#### [Getting started with Ansible 12 - Adding Users and Bootstrapping](https://youtu.be/P5iKWANifrU?si=Q6mpfhpCvCrNgxvA)
+#### [Getting started with Ansible 13 - Adding Users and Bootstrapping](https://youtu.be/P5iKWANifrU?si=Q6mpfhpCvCrNgxvA)
+
+ In video 13, we'll look at adding a user, and then we'll set up Ansible to use a specific user for running tasks. Also, we'll walk through creating a bootstrap playbook specifically for adding new nodes. 
+  <details>
+
+  <summary>Notes</summary>
+ coming soon ...
+
+  </details>
+  
+#### [Getting started with Ansible 14 - Adding Users and Bootstrapping](https://youtu.be/P5iKWANifrU?si=Q6mpfhpCvCrNgxvA)
 
  In video 13, we'll look at adding a user, and then we'll set up Ansible to use a specific user for running tasks. Also, we'll walk through creating a bootstrap playbook specifically for adding new nodes. 
   <details>
