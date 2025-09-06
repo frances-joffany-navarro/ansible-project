@@ -218,10 +218,10 @@ In video 12, we learn how to manage systemd services that run in the background.
 
   </details>
   
-#### [Getting started with Ansible 14 - Adding Users and Bootstrapping](https://youtu.be/P5iKWANifrU?si=Q6mpfhpCvCrNgxvA)
+#### [Getting started with Ansible 14 - Roles](https://youtu.be/tq9sCeQNVYc?si=hVZTVX8qY3hr8UG3)
 
- In video 13, we'll look at adding a user, and then we'll set up Ansible to use a specific user for running tasks. Also, we'll walk through creating a bootstrap playbook specifically for adding new nodes. 
-  <details>
+In video 14, we get started on roles. Roles in Ansible is one of its most amazing features, that allows you to categorize your hosts based on their intended purpose.
+ <details>
 
   <summary>Notes</summary>
  coming soon ...
