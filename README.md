@@ -227,6 +227,15 @@ In video 14, we get started on roles. Roles in Ansible is one of its most amazin
  coming soon ...
 
   </details>
+  
+#### [Getting started with Ansible 15- Host variables and Handlers](https://youtu.be/shBlQQZLU9M?si=lb8S5iimO0txln36)
+
+es, and we'll also take a look at handlers as well which is a more efficient method of restarting services after a configuration change is made.  <details>
+
+  <summary>Notes</summary>
+ coming soon ...
+
+  </details>
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
