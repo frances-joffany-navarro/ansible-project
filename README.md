@@ -211,6 +211,7 @@ In video 12, we learn how to manage systemd services that run in the background.
 #### [Getting started with Ansible 13 - Adding Users and Bootstrapping](https://youtu.be/P5iKWANifrU?si=Q6mpfhpCvCrNgxvA)
 
  In video 13, we'll look at adding a user, and then we'll set up Ansible to use a specific user for running tasks. Also, we'll walk through creating a bootstrap playbook specifically for adding new nodes. 
+
   <details>
 
   <summary>Notes</summary>
@@ -221,6 +222,7 @@ In video 12, we learn how to manage systemd services that run in the background.
 #### [Getting started with Ansible 14 - Roles](https://youtu.be/tq9sCeQNVYc?si=hVZTVX8qY3hr8UG3)
 
 In video 14, we get started on roles. Roles in Ansible is one of its most amazing features, that allows you to categorize your hosts based on their intended purpose.
+
  <details>
 
   <summary>Notes</summary>
@@ -230,7 +232,20 @@ In video 14, we get started on roles. Roles in Ansible is one of its most amazin
   
 #### [Getting started with Ansible 15- Host variables and Handlers](https://youtu.be/shBlQQZLU9M?si=lb8S5iimO0txln36)
 
-es, and we'll also take a look at handlers as well which is a more efficient method of restarting services after a configuration change is made.  <details>
+es, and we'll also take a look at handlers as well which is a more efficient method of restarting services after a configuration change is made.  
+
+<details>
+
+  <summary>Notes</summary>
+ coming soon ...
+
+  </details>
+
+#### [Getting started with Ansible 16- Templates](https://youtu.be/s8F_YWGHeDM)
+
+In video 16 (the final episode) we'll learn how to create templates, that can be used to automate the creation of configuration files for services/daemons.
+
+<details>
 
   <summary>Notes</summary>
  coming soon ...
