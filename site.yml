@@ -20,7 +20,7 @@
 
   
 - hosts: workstation
-  connection: local
+  become: true
   tasks: 
 
   - name: install unzip
