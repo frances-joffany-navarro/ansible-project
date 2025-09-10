@@ -192,7 +192,12 @@ In video #11, we look at a few methods of copying files to target nodes.
   <details>
 
   <summary>Issues</summary>
- Problem connecting to the hosts
+  Problem connecting to the hosts
+
+  - Need to install openssh-server to the host
+  - Copy the public key
+  - 
+
 
   </details> 
 
