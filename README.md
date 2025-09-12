@@ -195,7 +195,10 @@ In video #11, we look at a few methods of copying files to target nodes.
 
     - Problem connecting to the host
       - Install openssh-server and copy public key to the host. Refer to Tutorial #2
-      - Restart the servers or run this manually to the workstation when there is an error in dpkg `sudo dpkg -- configure -a`
+      - Restart the servers or run this manually to the workstation when there is an 
+    - Unable to acquire the dpkg frontend lock (Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 4379 (unattended-upgr))
+      - error in dpkg `sudo dpkg -- configure -a`
+      - [dpkg frontend lock fix](https://www.geeksforgeeks.org/linux-unix/how-to-fix-unable-to-acquire-the-dpkg-frontend-lock-error-in-ubuntu/)
 
   </details> 
 
@@ -206,7 +209,12 @@ In video 12, we learn how to manage systemd services that run in the background.
   <details>
 
   <summary>Notes</summary>
- coming soon ...
+
+    Create a play where it automatically run httpd on boot and when it install it will ask
+
+    Create a play to change a line in a httpd configuration file and restart the service
+
+    Note: when registering a variable, check if you need to reuse or change it's name 
 
   </details>
 
