@@ -185,19 +185,17 @@ In video #11, we look at a few methods of copying files to target nodes.
   <details>
 
   <summary>Notes</summary>
- 
+    - Create a play to copy files to servers and a play to download a package and unzip it
 
   </details> 
 
   <details>
 
   <summary>Issues</summary>
-  Problem connecting to the hosts
 
-  - Need to install openssh-server to the host
-  - Copy the public key
-  - 
-
+    - Problem connecting to the host
+      - Install openssh-server and copy public key to the host. Refer to Tutorial #2
+      - Restart the servers or run this manually to the workstation when there is an error in dpkg `sudo dpkg -- configure -a`
 
   </details> 
 
