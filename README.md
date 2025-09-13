@@ -214,7 +214,7 @@ In video 12, we learn how to manage systemd services that run in the background.
 
     Create a play to change a line in a httpd configuration file and restart the service
 
-    Note: when registering a variable, check if you need to reuse or change it's name 
+    Note: when registering a variable, check if you need to reuse or change it's name to limit confusion
 
   </details>
 
