@@ -214,7 +214,7 @@ In video 12, we learn how to manage systemd services that run in the background.
 
     Create a play to change a line in a httpd configuration file and restart the service
 
-    Note: when registering a variable, check if you need to reuse or change it's name to limit confusion
+    Note: when registering a variable, check if you need to reuse or change it's name to avoid confusion
 
   </details>
 
@@ -226,8 +226,13 @@ In video 12, we learn how to manage systemd services that run in the background.
   <details>
 
   <summary>Notes</summary>
- coming soon ...
 
+  ``cat /etc/passwd``
+  
+  Ansible module used:
+    - user -  create a new user
+    - authorized_keys - add or remove ssh to a user
+ 
   </details>
   
 #### [Getting started with Ansible 14 - Roles](https://youtu.be/tq9sCeQNVYc?si=hVZTVX8qY3hr8UG3)
