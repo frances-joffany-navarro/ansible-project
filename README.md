@@ -226,12 +226,24 @@ In video 12, we learn how to manage systemd services that run in the background.
   <details>
 
   <summary>Notes</summary>
+  Created a user called grumpy and added a ssh public key and created a sudoers file for this user.
 
-  ``cat /etc/passwd``
+  With this user using a sudoer permission without using password, we configure the ansible configuration file and put grumpy user as a remote_user. This resulted to not use the --ask-become-pass argument when running the ansible playbook.
+
+  Before:  
+  ``` ansible-playbook --ask-become-pass site.yml ```
+
+  After:
+  ``` ansible-playbook site.yml ```
+
+
+  Command used:
+    - ``cat /etc/passwd``
   
   Ansible module used:
-    - user -  create a new user
+    - user - create a new user
     - authorized_keys - add or remove ssh to a user
+    - copy - copy files
  
   </details>
   
