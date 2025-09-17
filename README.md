@@ -236,6 +236,8 @@ In video 12, we learn how to manage systemd services that run in the background.
   After:
   ``` ansible-playbook site.yml ```
 
+  We created a bootstrap.yml and this playbook will be useful when for example a new server is provisioned, we would like to to run this playbook to create the user, add ssh public key and add the user to sudoers.
+
 
   Command used:
     - ``cat /etc/passwd``
@@ -245,6 +247,7 @@ In video 12, we learn how to manage systemd services that run in the background.
     - authorized_keys - add or remove ssh to a user
     - copy - copy files
  
+ System service user
   </details>
   
 #### [Getting started with Ansible 14 - Roles](https://youtu.be/tq9sCeQNVYc?si=hVZTVX8qY3hr8UG3)
