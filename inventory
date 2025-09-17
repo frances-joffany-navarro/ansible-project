@@ -1,8 +1,8 @@
 [web_servers]
-ubuntu22@192.168.129.44
+192.168.129.44
 
 [workstation]
-workstation@192.168.129.50
+192.168.129.50
 
 
 
