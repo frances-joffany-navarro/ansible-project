@@ -257,11 +257,70 @@ In video 14, we get started on roles. Roles in Ansible is one of its most amazin
  <details>
 
   <summary>Notes</summary>
- coming soon ...
+  
+  Steps on categorizing hosts by roles:
+
+  1. Update main yml file, which is the site.yml
+      
+      ```
+      
+      ---
+      
+      - hosts: all
+        become: true
+        pre_tasks:
+        
+        - name: update repo cache (CentOS)
+          tags: always
+          dnf:
+            update_cache: yes
+          changed_when: false 
+          when: ansible_distribution == "CentOS"
+
+        - name: update repo cache (Ubuntu)
+          tags: always
+          apt:
+            update_cache: yes
+          changed_when: false
+          when: ansible_distribution == "Ubuntu"
+
+
+      - hosts: all
+        become: true
+        roles:
+          - base
+
+      - hosts: workstations
+        become: true
+        roles:
+          - workstations
+
+      - hosts: web_servers
+        become: true
+        roles:
+          - web_servers
+
+      - hosts: db_servers
+        become: true
+        roles:
+          - db_servers
+
+      - hosts: file_servers
+        become: true
+        roles:
+          - file_servers
+      
+      ```
+  2. Create a role directory
+  3. Create a directory for each role
+  4. Create a tasks sub-directory for each role
+  5. Create a file called main.yml in every tasks directory, then add the task dedicated to that role
+
+Using roles helps to understand your code and make it cleaner.
 
   </details>
   
-#### [Getting started with Ansible 15- Host variables and Handlers](https://youtu.be/shBlQQZLU9M?si=lb8S5iimO0txln36)
+#### [Getting started with Ansible 15 - Host variables and Handlers](https://youtu.be/shBlQQZLU9M?si=lb8S5iimO0txln36)
 
 es, and we'll also take a look at handlers as well which is a more efficient method of restarting services after a configuration change is made.  
 
