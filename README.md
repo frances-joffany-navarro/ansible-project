@@ -315,6 +315,30 @@ In video 14, we get started on roles. Roles in Ansible is one of its most amazin
   3. Create a directory for each role
   4. Create a tasks sub-directory for each role
   5. Create a file called main.yml in every tasks directory, then add the task dedicated to that role
+  6. Optional: Incase a task needs to copy a file in files directory you need to create this directory and copy/create the need file.
+ 
+Directory
+ - roles
+    - base
+      - tasks
+        - main.yml
+    - db_servers
+      - tasks
+        - main.yml
+    - file_servers
+      - tasks
+        - main.yml
+    - web_servers
+      - tasks
+        - main.yml
+      - files
+        - index.html
+    - workstations
+      - tasks
+        - main.yml
+ - site.yml
+ - inventory
+ - ansible.cfg
 
 Using roles helps to understand your code and make it cleaner.
 
