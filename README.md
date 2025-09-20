@@ -346,12 +346,21 @@ Using roles helps to understand your code and make it cleaner.
   
 #### [Getting started with Ansible 15 - Host variables and Handlers](https://youtu.be/shBlQQZLU9M?si=lb8S5iimO0txln36)
 
-es, and we'll also take a look at handlers as well which is a more efficient method of restarting services after a configuration change is made.  
+ In video 15, we'll learn how we can benefit from host variables, and we'll also take a look at handlers as well which is a more efficient method of restarting services after a configuration change is made.
 
 <details>
 
   <summary>Notes</summary>
- coming soon ...
+  host variable is useful as a placeholder for packages for different host. For example there is host running in ubuntu and centOS. There are dedicated tasks for these os because the commands/package name are different from each other.
+
+  We use host varaibles to store information needed per host such as the package names and with this we can use only one task to run a similar task by just using host variables.
+
+  Steps on using host_variables
+  
+  1. Create a folder names host_vars
+  2. Add a file using the ip_address of the host, 192.168.129.44.yml. Do not forget the file format .yml
+  3. Add the variables that will be used in the playbook
+  4. Update the task in the site.yml
 
   </details>
 
