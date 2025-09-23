@@ -1,4 +1,4 @@
-ko no# My Ansible Playbook
+My Ansible Playbook
 These are ansible playbook compilation
 
 - Print the instance information associated to an EIP
