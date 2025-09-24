@@ -371,7 +371,17 @@ In video 16 (the final episode) we'll learn how to create templates, that can be
 <details>
 
   <summary>Notes</summary>
- coming soon ...
+ Allows us to use a template to implement to multiple host and independently change the variable in each host as we see fit.
+
+ For this example we use a template of ssh configuration file
+
+ 1. mkdir roles/base/templates 
+ 2. copy /etc/ssh/sshd_config to templates for ubuntu and centos
+ 3. Add `AllowUsers {{ ssh_users }}`
+ 4. Edit all host_vars files by adding ``ssh_user: "grumpy"`` && ``ssh_template_file: sshd_config_ubuntu.j2``
+ 5. Need to create a host_vars for the workstation by using the ip_address
+ 6. Edit the main.yml in roles/base/tasks
+ 7. Create a handlers inside base called restart_sshd
 
   </details>
 
