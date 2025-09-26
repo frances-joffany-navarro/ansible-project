@@ -1,6 +1,7 @@
 My Ansible Playbook
 These are ansible playbook compilation
 
+Do this project (3 days)
 Project
 - Print the instance information associated to an EIP
 - Disassocite an instance
