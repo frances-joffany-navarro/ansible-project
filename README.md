@@ -390,3 +390,4 @@ In video 16 (the final episode) we'll learn how to create templates, that can be
 
 ### Credit
 - [Is it better to disassociate first the EIP or reassociate?](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_eip_module.html)
+- [How to Use Ansible For DevOps? Hands-On Tutorial](https://spacelift.io/blog/ansible-devops)
