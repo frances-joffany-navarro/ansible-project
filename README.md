@@ -1,11 +1,13 @@
 My Ansible Playbook
 These are ansible playbook compilation
 
-Do this project (3 days) 3 oct
+Do this project
 Project
 - Print the instance information associated to an EIP
 - Disassocite an instance
 - Associate an instance
+- create a new repositories
+
 
 
 ## Getting Started
