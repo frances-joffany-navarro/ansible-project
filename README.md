@@ -7,7 +7,7 @@ Project
 - Disassocite an instance
 - Associate an instance
 - create a new repositories
-
+- explore other area; researching
 
 
 ## Getting Started
