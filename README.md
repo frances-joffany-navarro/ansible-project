@@ -8,6 +8,7 @@ Project
 - Associate an instance
 - create a new repositories
 - explore other area; researching
+- refactor my upskill project
 - what to do next in this project?
 
 
