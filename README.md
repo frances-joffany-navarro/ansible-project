@@ -10,7 +10,7 @@ Project
 - explore other area; researching
 - refactor my upskill project
 - what to do next in this project?
-
+  - advance reading
 
 ## Getting Started
 - [https://docs.ansible.com/ansible/latest/index.html](https://docs.ansible.com/ansible/latest/index.html)
