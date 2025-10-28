@@ -11,6 +11,10 @@ Project
 - refactor my upskill project
 - what to do next in this project?
   - advance reading
+- Jenkins
+- Prometheus / Grafana
+- Terraform et Vagrant
+
 
 ## Getting Started
 - [https://docs.ansible.com/ansible/latest/index.html](https://docs.ansible.com/ansible/latest/index.html)
