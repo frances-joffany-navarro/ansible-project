@@ -14,6 +14,7 @@ Project
 - Jenkins
 - Prometheus / Grafana
 - Terraform et Vagrant
+- create a repository for jenkins
 
 
 ## Getting Started
